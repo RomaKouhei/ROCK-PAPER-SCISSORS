@@ -1,6 +1,6 @@
 
-let playerSelection;
-let computerSelection = computerPlay();
+//let playerSelection;
+//let computerSelection;
 const loss = "Вы проиграли.";
 const victory = "Вы победили.";
 
@@ -11,6 +11,7 @@ function computerPlay () {
 
 function playRound (playerSelection, computerSelection) {
     playerSelection = prompt("Введите свой выбор").toLowerCase();
+    computerSelection = computerPlay();
 
     if (playerSelection === "камень" && computerSelection === "ножницы") {
         return  loss;
